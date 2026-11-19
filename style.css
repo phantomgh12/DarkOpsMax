@@ -1,0 +1,1411 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 10rem;
+}
+
+img {
+    width: 144px;
+    height: 144px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.download-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.download-container p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+    color: #555;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+.download-container a {
+    display: inline-block;
+    color: rgb(40, 133, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* ================================
+   DARKOPSMAX — MAIN THEME
+================================ */
+
+.darkopsmax-page {
+    --bg: #08090b;
+    --bg-secondary: #101216;
+    --bg-card: #141619;
+    --bg-card-hover: #1b1e21;
+
+    --red: #e32636;
+    --red-dark: #9e1523;
+    --red-light: #ff4555;
+
+    --white: #f5f5f5;
+    --text: #d0d0d0;
+    --muted: #858585;
+    --border: rgba(255, 255, 255, 0.09);
+
+    --transition: 0.3s ease;
+
+    background: var(--bg);
+    color: var(--white);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/* ================================
+   GLOBAL RESET WITHIN THE PAGE
+================================ */
+
+.darkopsmax-page *,
+.darkopsmax-page *::before,
+.darkopsmax-page *::after {
+    box-sizing: border-box;
+}
+
+.darkopsmax-page h1,
+.darkopsmax-page h2,
+.darkopsmax-page h3,
+.darkopsmax-page p {
+    margin-top: 0;
+}
+
+.darkopsmax-page h1,
+.darkopsmax-page h2,
+.darkopsmax-page h3 {
+    line-height: 1.2;
+}
+
+.darkopsmax-page p {
+    color: var(--text);
+}
+
+.darkopsmax-page ul {
+    padding-left: 20px;
+}
+
+.darkopsmax-page li {
+    margin-bottom: 8px;
+}
+
+.darkopsmax-page section {
+    position: relative;
+    padding: 110px 8%;
+}
+
+.darkopsmax-page span {
+    display: inline-block;
+}
+
+.darkopsmax-page .highlight {
+    color: var(--red);
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.darkopsmax-page .hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 8%;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 5, 7, 0.98) 0%,
+            rgba(5, 5, 7, 0.92) 45%,
+            rgba(5, 5, 7, 0.55) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(8, 9, 11, 1) 0%,
+            transparent 40%
+        ),
+        url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=2000&q=90");
+
+    background-position: center;
+    background-size: cover;
+}
+
+.darkopsmax-page .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--red);
+    box-shadow: 0 0 30px var(--red);
+}
+
+.darkopsmax-page .hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--red),
+        transparent
+    );
+}
+
+.darkopsmax-page .hero-content {
+    max-width: 950px;
+    position: relative;
+    z-index: 2;
+}
+
+.darkopsmax-page .hero-tag {
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: 800;
+    color: var(--red-light);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.darkopsmax-page .hero-title {
+    font-size: clamp(60px, 10vw, 145px);
+    font-weight: 1000;
+    letter-spacing: -8px;
+    line-height: 0.95;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+
+    text-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.darkopsmax-page .title-accent {
+    color: var(--red);
+}
+
+.darkopsmax-page .hero-subtitle {
+    font-size: clamp(22px, 3vw, 38px);
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.darkopsmax-page .hero-description {
+    max-width: 720px;
+    color: #b7b7b7;
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+.darkopsmax-page .hero-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.darkopsmax-page .hero-action {
+    padding: 16px 30px;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.darkopsmax-page .primary-action {
+    background: var(--red);
+    color: white;
+    border: 1px solid var(--red);
+}
+
+.darkopsmax-page .primary-action:hover {
+    background: var(--red-light);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(227, 38, 54, 0.3);
+}
+
+.darkopsmax-page .secondary-action {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.darkopsmax-page .secondary-action:hover {
+    border-color: var(--red);
+    color: var(--red-light);
+    transform: translateY(-4px);
+}
+
+
+/* ================================
+   SECTION HEADERS
+================================ */
+
+.darkopsmax-page .section-header {
+    max-width: 850px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.darkopsmax-page .section-label {
+    color: var(--red);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.darkopsmax-page .section-title {
+    font-size: clamp(32px, 5vw, 65px);
+    font-weight: 950;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.darkopsmax-page .section-description {
+    max-width: 700px;
+    margin: auto;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ================================
+   INTRODUCTION SECTION
+================================ */
+
+.darkopsmax-page .introduction-section {
+    background: var(--bg-secondary);
+}
+
+.darkopsmax-page .introduction-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.darkopsmax-page .introduction-text p {
+    color: #b4b4b4;
+    font-size: 17px;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.darkopsmax-page .game-identity {
+    border: 1px solid var(--border);
+    background: #0b0d0f;
+    padding: 35px;
+    position: relative;
+}
+
+.darkopsmax-page .game-identity::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--red);
+}
+
+.darkopsmax-page .identity-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.darkopsmax-page .identity-item:last-child {
+    border-bottom: none;
+}
+
+.darkopsmax-page .identity-label {
+    color: var(--red);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.darkopsmax-page .identity-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+
+/* ================================
+   STORY SECTION
+================================ */
+
+.darkopsmax-page .story-section {
+    background:
+        linear-gradient(
+            135deg,
+            #111315,
+            #08090b 70%
+        );
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.darkopsmax-page .story-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.darkopsmax-page .story-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.darkopsmax-page .story-content p {
+    font-size: 17px;
+    line-height: 2;
+    color: #bcbcbc;
+    margin-bottom: 25px;
+}
+
+.darkopsmax-page .story-highlight {
+    margin-top: 60px;
+    padding: 40px;
+    border-left: 4px solid var(--red);
+    background: rgba(227, 38, 54, 0.05);
+    text-align: center;
+}
+
+.darkopsmax-page .story-highlight-text {
+    font-size: clamp(20px, 4vw, 38px);
+    font-weight: 950;
+    letter-spacing: 3px;
+    color: white;
+}
+
+
+/* ================================
+   FEATURES SECTION
+================================ */
+
+.darkopsmax-page .features-section {
+    background: var(--bg);
+}
+
+.darkopsmax-page .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.darkopsmax-page .feature-card {
+    padding: 35px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.darkopsmax-page .feature-card:hover {
+    transform: translateY(-8px);
+    background: var(--bg-card-hover);
+    border-color: rgba(227, 38, 54, 0.5);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.darkopsmax-page .feature-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: var(--red);
+    transition: var(--transition);
+}
+
+.darkopsmax-page .feature-card:hover::after {
+    width: 100%;
+}
+
+.darkopsmax-page .feature-number {
+    font-size: 35px;
+    font-weight: 1000;
+    color: rgba(227, 38, 54, 0.35);
+    margin-bottom: 25px;
+}
+
+.darkopsmax-page .feature-title {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.darkopsmax-page .feature-description {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--muted);
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   GAME MODES
+================================ */
+
+.darkopsmax-page .game-modes-section {
+    background: #0d0f11;
+}
+
+.darkopsmax-page .game-modes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.darkopsmax-page .game-mode-card {
+    position: relative;
+    min-height: 350px;
+    padding: 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.darkopsmax-page .game-mode-card:hover {
+    border-color: var(--red);
+    transform: translateY(-5px);
+}
+
+.darkopsmax-page .game-mode-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(
+        circle,
+        rgba(227, 38, 54, 0.09),
+        transparent 70%
+    );
+    pointer-events: none;
+}
+
+.darkopsmax-page .game-mode-content {
+    position: relative;
+    z-index: 1;
+}
+
+.darkopsmax-page .game-mode-category {
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.darkopsmax-page .game-mode-title {
+    font-size: 30px;
+    font-weight: 950;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.darkopsmax-page .game-mode-description {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.darkopsmax-page .game-mode-details {
+    margin-top: 25px;
+    color: #bcbcbc;
+    font-size: 13px;
+}
+
+.darkopsmax-page .game-mode-details li::marker {
+    color: var(--red);
+}
+
+
+/* ================================
+   MAPS SECTION
+================================ */
+
+.darkopsmax-page .maps-section {
+    background: var(--bg);
+}
+
+.darkopsmax-page .maps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.darkopsmax-page .map-card {
+    background: var(--bg-card);
+    padding: 35px;
+    border: 1px solid var(--border);
+    position: relative;
+    transition: var(--transition);
+}
+
+.darkopsmax-page .map-card:hover {
+    border-color: var(--red);
+    background: #181a1d;
+    transform: translateY(-7px);
+}
+
+.darkopsmax-page .map-number {
+    color: var(--red);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.darkopsmax-page .map-name {
+    font-size: 27px;
+    font-weight: 950;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.darkopsmax-page .map-type {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.darkopsmax-page .map-description {
+    font-size: 14px;
+    line-height: 1.9;
+    color: #b0b0b0;
+}
+
+.darkopsmax-page .map-features {
+    margin-top: 25px;
+    color: #d0d0d0;
+    font-size: 13px;
+}
+
+.darkopsmax-page .map-features li::marker {
+    color: var(--red);
+}
+
+
+/* ================================
+   OPERATORS SECTION
+================================ */
+
+.darkopsmax-page .operators-section {
+    background: #101214;
+    border-top: 1px solid var(--border);
+}
+
+.darkopsmax-page .operators-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.darkopsmax-page .operator-card {
+    background: #17191c;
+    border: 1px solid var(--border);
+    padding: 30px;
+    position: relative;
+    transition: var(--transition);
+}
+
+.darkopsmax-page .operator-card:hover {
+    border-color: var(--red);
+    transform: translateY(-8px);
+}
+
+.darkopsmax-page .operator-code {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--red);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.darkopsmax-page .operator-name {
+    font-size: 32px;
+    font-weight: 1000;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.darkopsmax-page .operator-role {
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: #999;
+    margin-bottom: 25px;
+}
+
+.darkopsmax-page .operator-description {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #aaa;
+}
+
+.darkopsmax-page .operator-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.darkopsmax-page .operator-tag {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 7px 10px;
+    background: rgba(227, 38, 54, 0.08);
+    border: 1px solid rgba(227, 38, 54, 0.2);
+    color: var(--red-light);
+}
+
+
+/* ================================
+   EQUIPMENT SECTION
+================================ */
+
+.darkopsmax-page .equipment-section {
+    background: var(--bg);
+}
+
+.darkopsmax-page .equipment-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.darkopsmax-page .equipment-category {
+    padding: 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.darkopsmax-page .equipment-category:hover {
+    border-color: rgba(227, 38, 54, 0.5);
+}
+
+.darkopsmax-page .equipment-title {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.darkopsmax-page .equipment-description {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.darkopsmax-page .equipment-list {
+    margin-top: 25px;
+    color: #d0d0d0;
+    font-size: 14px;
+}
+
+.darkopsmax-page .equipment-list li::marker {
+    color: var(--red);
+}
+
+
+/* ================================
+   PROGRESSION SECTION
+================================ */
+
+.darkopsmax-page .progression-section {
+    background: #101214;
+}
+
+.darkopsmax-page .progression-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.darkopsmax-page .progression-card {
+    padding: 30px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.darkopsmax-page .progression-card:hover {
+    border-color: var(--red);
+    transform: translateY(-5px);
+}
+
+.darkopsmax-page .progression-title {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.darkopsmax-page .progression-description {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.9;
+}
+
+.darkopsmax-page .rank-list-container {
+    margin-top: 70px;
+    padding: 40px;
+    border: 1px solid var(--border);
+    background: #0b0d0f;
+}
+
+.darkopsmax-page .rank-list-title {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.darkopsmax-page .rank-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.darkopsmax-page .rank-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px 15px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.darkopsmax-page .rank-item:hover {
+    border-color: var(--red);
+    transform: translateY(-5px);
+}
+
+.darkopsmax-page .rank-number {
+    font-size: 25px;
+    font-weight: 1000;
+    color: var(--red);
+    margin-bottom: 12px;
+}
+
+.darkopsmax-page .rank-name {
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+}
+
+
+/* ================================
+   COMMUNITY SECTION
+================================ */
+
+.darkopsmax-page .community-section {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15, 15, 17, 0.98),
+            rgba(24, 10, 12, 0.98)
+        );
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.darkopsmax-page .community-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.darkopsmax-page .community-description {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.darkopsmax-page .community-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.darkopsmax-page .community-feature {
+    padding: 30px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.02);
+    transition: var(--transition);
+}
+
+.darkopsmax-page .community-feature:hover {
+    background: rgba(227, 38, 54, 0.05);
+    border-color: var(--red);
+}
+
+.darkopsmax-page .community-feature-title {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.darkopsmax-page .community-feature-description {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* ================================
+   ROADMAP SECTION
+================================ */
+
+.darkopsmax-page .roadmap-section {
+    background: var(--bg);
+}
+
+.darkopsmax-page .roadmap-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.darkopsmax-page .roadmap-item {
+    padding: 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    position: relative;
+    transition: var(--transition);
+}
+
+.darkopsmax-page .roadmap-item:hover {
+    border-color: var(--red);
+    transform: translateY(-5px);
+}
+
+.darkopsmax-page .roadmap-phase {
+    color: var(--red);
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.darkopsmax-page .roadmap-title {
+    font-size: 27px;
+    font-weight: 950;
+    margin-bottom: 20px;
+}
+
+.darkopsmax-page .roadmap-description {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--muted);
+}
+
+.darkopsmax-page .roadmap-features {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+.darkopsmax-page .roadmap-features li::marker {
+    color: var(--red);
+}
+
+
+/* ================================
+   FAQ SECTION
+================================ */
+
+.darkopsmax-page .faq-section {
+    background: #101214;
+}
+
+.darkopsmax-page .faq-list {
+    max-width: 900px;
+    margin: auto;
+}
+
+.darkopsmax-page .faq-item {
+    padding: 30px;
+    border-bottom: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.darkopsmax-page .faq-item:hover {
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom-color: rgba(227, 38, 54, 0.5);
+}
+
+.darkopsmax-page .faq-question {
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.darkopsmax-page .faq-answer {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   FINAL SECTION
+================================ */
+
+.darkopsmax-page .final-section {
+    text-align: center;
+    padding: 140px 8%;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(227, 38, 54, 0.12),
+            transparent 65%
+        ),
+        #08090b;
+    border-top: 1px solid var(--border);
+}
+
+.darkopsmax-page .final-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.darkopsmax-page .final-label {
+    color: var(--red);
+    font-size: 11px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.darkopsmax-page .final-title {
+    font-size: clamp(38px, 6vw, 80px);
+    font-weight: 1000;
+    letter-spacing: -3px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.darkopsmax-page .final-description {
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 40px;
+}
+
+.darkopsmax-page .final-brand {
+    font-size: clamp(35px, 7vw, 90px);
+    font-weight: 1000;
+    letter-spacing: -4px;
+    margin: 40px 0;
+}
+
+.darkopsmax-page .brand-dark {
+    color: white;
+}
+
+.darkopsmax-page .brand-accent {
+    color: var(--red);
+}
+
+.darkopsmax-page .final-tagline {
+    color: #888;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.darkopsmax-page .darkopsmax-footer {
+    background: #050607;
+    border-top: 1px solid var(--border);
+    padding: 80px 8% 30px;
+}
+
+.darkopsmax-page .footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+.darkopsmax-page .footer-brand {
+    max-width: 350px;
+}
+
+.darkopsmax-page .footer-logo {
+    font-size: 32px;
+    font-weight: 1000;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.darkopsmax-page .footer-description {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.darkopsmax-page .footer-links {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.darkopsmax-page .footer-link-group {
+    min-width: 130px;
+}
+
+.darkopsmax-page .footer-heading {
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.darkopsmax-page .footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.darkopsmax-page .footer-list li {
+    margin-bottom: 12px;
+}
+
+.darkopsmax-page .footer-link {
+    color: #777;
+    font-size: 13px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.darkopsmax-page .footer-link:hover {
+    color: var(--red);
+}
+
+.darkopsmax-page .footer-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.darkopsmax-page .copyright {
+    color: #666;
+    font-size: 12px;
+}
+
+.darkopsmax-page .footer-motto {
+    color: var(--red);
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+
+/* ================================
+   SCROLLBAR
+================================ */
+
+.darkopsmax-page ::-webkit-scrollbar {
+    width: 8px;
+}
+
+.darkopsmax-page ::-webkit-scrollbar-track {
+    background: #08090b;
+}
+
+.darkopsmax-page ::-webkit-scrollbar-thumb {
+    background: #292c30;
+    border-radius: 10px;
+}
+
+.darkopsmax-page ::-webkit-scrollbar-thumb:hover {
+    background: var(--red);
+}
+
+
+/* ================================
+   RESPONSIVE — TABLETS
+================================ */
+
+@media (max-width: 1100px) {
+
+    .darkopsmax-page section {
+        padding: 90px 6%;
+    }
+
+    .darkopsmax-page .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .darkopsmax-page .maps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .darkopsmax-page .operators-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .darkopsmax-page .progression-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .darkopsmax-page .community-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .darkopsmax-page .rank-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .darkopsmax-page .introduction-content {
+        gap: 40px;
+    }
+}
+
+
+/* ================================
+   RESPONSIVE — MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    .darkopsmax-page section {
+        padding: 75px 6%;
+    }
+
+    .darkopsmax-page .hero-section {
+        min-height: 85vh;
+        padding: 90px 6%;
+        background-position: center;
+    }
+
+    .darkopsmax-page .hero-title {
+        font-size: clamp(48px, 15vw, 90px);
+        letter-spacing: -4px;
+    }
+
+    .darkopsmax-page .hero-subtitle {
+        font-size: 23px;
+    }
+
+    .darkopsmax-page .hero-description {
+        font-size: 15px;
+    }
+
+    .darkopsmax-page .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .darkopsmax-page .hero-action {
+        text-align: center;
+        width: 100%;
+    }
+
+    .darkopsmax-page .section-header {
+        margin-bottom: 40px;
+    }
+
+    .darkopsmax-page .section-title {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+
+    .darkopsmax-page .introduction-content {
+        grid-template-columns: 1fr;
+    }
+
+    .darkopsmax-page .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .darkopsmax-page .game-modes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .darkopsmax-page .maps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .darkopsmax-page .operators-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .darkopsmax-page .equipment-content {
+        grid-template-columns: 1fr;
+    }
+
+    .darkopsmax-page .progression-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .darkopsmax-page .community-features {
+        grid-template-columns: 1fr;
+    }
+
+    .darkopsmax-page .roadmap-list {
+        grid-template-columns: 1fr;
+    }
+
+    .darkopsmax-page .rank-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .darkopsmax-page .rank-list-container {
+        padding: 20px;
+    }
+
+    .darkopsmax-page .story-highlight {
+        padding: 25px;
+    }
+
+    .darkopsmax-page .story-highlight-text {
+        font-size: 22px;
+    }
+
+    .darkopsmax-page .final-section {
+        padding: 100px 6%;
+    }
+
+    .darkopsmax-page .final-title {
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+
+    .darkopsmax-page .final-brand {
+        letter-spacing: -2px;
+    }
+
+    .darkopsmax-page .footer-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .darkopsmax-page .footer-links {
+        gap: 35px;
+    }
+
+    .darkopsmax-page .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+/* ================================
+   SMALL MOBILE DEVICES
+================================ */
+
+@media (max-width: 400px) {
+
+    .darkopsmax-page .section-title {
+        font-size: 29px;
+    }
+
+    .darkopsmax-page .hero-title {
+        font-size: 47px;
+    }
+
+    .darkopsmax-page .hero-subtitle {
+        font-size: 19px;
+    }
+
+    .darkopsmax-page .rank-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .darkopsmax-page .map-card,
+    .darkopsmax-page .feature-card,
+    .darkopsmax-page .operator-card,
+    .darkopsmax-page .equipment-category,
+    .darkopsmax-page .roadmap-item {
+        padding: 25px;
+    }
+
+    .darkopsmax-page .final-title {
+        font-size: 32px;
+    }
+
+    .darkopsmax-page .footer-links {
+        gap: 25px;
+    }
+}
+
+
+/* ================================
+   RED SELECTION COLOR
+================================ */
+
+.darkopsmax-page ::selection {
+    background: var(--red);
+    color: white;
+}
