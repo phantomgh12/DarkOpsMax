@@ -1409,3 +1409,18 @@ img {
     background: var(--red);
     color: white;
 }
+
+.download-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(40, 133, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
